@@ -47,6 +47,7 @@
                     </td>
                     <td>
                         <asp:Button ID="btinserir" runat="server" OnClick="btinserir_Click" Text="Inserir Site" />
+                        <asp:Button ID="btSelecionar" runat="server" OnClick="btSelecionar_Click" Text="Selecionar Site" />
                     </td>
                 </tr>
                 <tr>
@@ -56,7 +57,12 @@
                             <asp:ListItem Value="2">teste2</asp:ListItem>
                         </asp:DropDownList>
                     </td>
-                    <td class="auto-style4"></td>
+                    <td class="auto-style4">
+                        <asp:ListBox ID="ldEndereco" runat="server" OnSelectedIndexChanged="ListBox1_SelectedIndexChanged">
+                            <asp:ListItem Value="1">listbox-teste1</asp:ListItem>
+                            <asp:ListItem Value="2">listbox2-teste2</asp:ListItem>
+                        </asp:ListBox>
+                    </td>
                     <td class="auto-style5"></td>
                 </tr>
                 <tr>
